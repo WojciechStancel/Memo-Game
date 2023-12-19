@@ -1,0 +1,41 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	background-color: #536dfc75;
+	min-width: 100vw;
+	z-index: 50;
+	height: 10em;
+}
+
+.navbar h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 1em 0;
+}
+
+.navbar h1 img {
+	margin: 0 0.4em;
+	width: 1.5em;
+}
+
+.navbar h1 .planeRight {
+	transform: rotateY(180deg);
+}
+
+@media (min-width: 576px) {
+	.navbar h1 {
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.navbar {
+		height: 12em;
+	}
+
+	.navbar h1 {
+		font-size: 2.5rem;
+	}
+}
