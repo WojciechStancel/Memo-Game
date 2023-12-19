@@ -113,8 +113,8 @@ function Board() {
 								<div className="front">
 									<Image
 										src={data}
-										width={60}
-										height={60}
+										width={100}
+										height={100}
 										alt="game card"
 										priority
 										className="card-image"
