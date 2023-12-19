@@ -6,7 +6,7 @@
 
 @property --myColor2 {
 	syntax: "<color>";
-	initial-value: rgb(8, 2, 190);
+	initial-value: rgb(38, 38, 38);
 	inherits: false;
 }
 
@@ -66,18 +66,20 @@
 	width: 100%;
 	height: 100%;
 	background-image: linear-gradient(
-		40deg,
+		60deg,
 		var(--myColor1) 40%,
-		var(--myColor2)
+		var(--myColor2) 90%
 	);
+	background: -moz-linear-gradient(40deg, #ffffff 40%, #34353e 90%);
 	box-shadow: 3px 4px 10px rgb(24, 24, 24);
-	border-radius: 80%;
+	border-radius: 50%;
 	transition: --myColor1 0.3s, --myColor2 0.3s;
 }
 
 .back:hover {
 	--myColor1: rgb(255, 255, 255);
-	--myColor2: rgb(0, 136, 255);
+	--myColor2: rgb(0, 61, 214);
+	background: -moz-linear-gradient(40deg, #eff6ff 40%, #285cb0 90%);
 }
 
 .card-image {
@@ -215,7 +217,7 @@
 		width: 500px;
 	}
 
-    .reset-btn {
-        font-size: 2rem;
-    }
+	.reset-btn {
+		font-size: 2rem;
+	}
 }
