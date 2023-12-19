@@ -16,31 +16,29 @@
 	align-items: center;
 	flex-direction: column;
 	height: 100vh;
+
 	padding: 2em;
 	color: white;
-	background-image: url("/images/balloons.jpg");
+	background-image: url("/images/bg-image2.jpg");
 	background-size: cover;
 	background-position: center;
+	position: relative;
 }
 
-.container::after {
-	content: "";
+.containerShadow {
 	position: absolute;
-	width: 100%;
-	height: 100%;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	background: rgba(0, 0, 0, 0.8);
-	box-shadow: 0 0 10px 2px black;
-	z-index: 1;
 }
 
 .board {
 	display: grid;
 	grid-template-columns: repeat(4, 60px);
 	grid-gap: 3.5em;
+	margin-top: 5em;
 	position: relative;
 	z-index: 2;
 }
@@ -118,7 +116,7 @@
 	border: 1px solid rgba(255, 255, 255, 0.549);
 	border-radius: 8px;
 	padding: 1em 2em;
-	background-color: #ffffff37;
+	background-color: #ffffff2e;
 	text-align: center;
 }
 
@@ -216,4 +214,8 @@
 		font-size: 2.5rem;
 		width: 500px;
 	}
+
+    .reset-btn {
+        font-size: 2rem;
+    }
 }

@@ -6,10 +6,10 @@ import Image from "next/image";
 
 const boardData = [
 	{
-		path: "/images/aircraft1.jpg",
+		path: "/images/aircraft9.jpg",
 	},
 	{
-		path: "/images/aircraft2.jpg",
+		path: "/images/aircraft10.jpg",
 	},
 	{
 		path: "/images/aircraft3.jpg",
@@ -90,6 +90,7 @@ function Board() {
 
 	return (
 		<div className="container">
+			<div className="containerShadow"></div>
 			<div className="board">
 				{loading ? (
 					<Image
