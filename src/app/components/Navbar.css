@@ -1,8 +1,10 @@
 .navbar {
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	position: fixed;
 	top: 0;
-	background-color: #08176d;
+	background-color: #636b90ca;
 	min-width: 100vw;
 	z-index: 50;
 	height: 10em;
@@ -12,17 +14,20 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	text-align: center;
-	margin: 1em 0;
+
 }
 
 .navbar h1 img {
 	margin: 0 0.4em;
-	width: 1.5em;
+	width: auto;
+	height: auto;
 }
 
+.navbar h1 .planeLeft {
+	transform: rotateZ(130deg);
+}
 .navbar h1 .planeRight {
-	transform: rotateY(180deg);
+	transform: rotateZ(-50deg);
 }
 
 @media (min-width: 576px) {

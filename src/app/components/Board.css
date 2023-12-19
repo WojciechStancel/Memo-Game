@@ -6,7 +6,7 @@
 
 @property --myColor2 {
 	syntax: "<color>";
-	initial-value: rgb(19, 14, 161);
+	initial-value: rgb(8, 2, 190);
 	inherits: false;
 }
 
@@ -19,9 +19,9 @@
 
 	padding: 2em;
 	color: white;
-	background-image: url("/images/bg-image2.jpg");
+	background-image: url("/images/bg-image3.jpg");
 	background-size: cover;
-	background-position: center;
+
 	position: relative;
 }
 
@@ -31,7 +31,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.7);
 }
 
 .board {
@@ -76,8 +76,8 @@
 }
 
 .back:hover {
-	--myColor1: rgb(231, 225, 225);
-	--myColor2: rgb(58, 141, 10);
+	--myColor1: rgb(255, 255, 255);
+	--myColor2: rgb(0, 136, 255);
 }
 
 .card-image {

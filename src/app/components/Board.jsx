@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const boardData = [
 	{
-		path: "/images/aircraft9.jpg",
+		path: "/images/aircraft1.jpg",
 	},
 	{
 		path: "/images/aircraft10.jpg",
@@ -15,7 +15,7 @@ const boardData = [
 		path: "/images/aircraft3.jpg",
 	},
 	{
-		path: "/images/aircraft4.jpg",
+		path: "/images/aircraft14.jpg",
 	},
 	{
 		path: "/images/aircraft5.jpg",
@@ -27,7 +27,7 @@ const boardData = [
 		path: "/images/aircraft7.jpg",
 	},
 	{
-		path: "/images/aircraft8.jpg",
+		path: "/images/aircraft9.jpg",
 	},
 ];
 
