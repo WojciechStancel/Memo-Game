@@ -1,27 +1,13 @@
-@property --myColor1 {
-	syntax: "<color>";
-	initial-value: rgb(255, 255, 255);
-	inherits: false;
-}
-
-@property --myColor2 {
-	syntax: "<color>";
-	initial-value: rgb(38, 38, 38);
-	inherits: false;
-}
-
 .container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	height: 100vh;
-
 	padding: 2em;
 	color: white;
 	background-image: url("/images/bg-image3.jpg");
 	background-size: cover;
-
 	position: relative;
 }
 
