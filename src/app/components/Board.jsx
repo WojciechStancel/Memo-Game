@@ -69,11 +69,11 @@ function Board() {
 	};
 
 	const updateActiveCards = (i) => {
-		if (!flippedCards.includes(i)) {
+		if (!flippedCards.includes(i) && !paired.includes(i)) {
 			if (flippedCards.length == 1) {
 				const firstIdx = flippedCards[0];
 				const secondIdx = i;
-				if (board[firstIdx] == board[secondIdx]) {
+				if (board[firstIdx] == board[secondIdx] && !paired.includes(secondIdx)) {
 					setPairedCards((prev) => [...prev, firstIdx, secondIdx]);
 				}
 
@@ -84,7 +84,11 @@ function Board() {
 				setFlippedCards([...flippedCards, i]);
 			}
 
-			setMoves((v) => v + 1);
+			if (paired.includes(i)) {
+				return;
+			} else {
+				setMoves((v) => v + 1);
+			}
 		}
 	};
 
@@ -107,7 +111,7 @@ function Board() {
 						return (
 							<div
 								onClick={() => {
-									!flipped ? updateActiveCards(i) : null;
+									updateActiveCards(i);
 								}}
 								key={i}
 								className={`card ${flipped || matched ? "active" : ""}`}>
