@@ -4,7 +4,6 @@
 	justify-content: center;
 	position: fixed;
 	top: 0;
-	/* background-color: #636b90ca; */
 	background-color: #090b15ca;
 	min-width: 100vw;
 	z-index: 50;
@@ -29,6 +28,12 @@
 }
 .navbar h1 .planeRight {
 	transform: rotateZ(-50deg);
+}
+
+@media (max-width: 330px){
+	.navbar {
+		height: 8em;
+	}
 }
 
 @media (min-width: 576px) {
