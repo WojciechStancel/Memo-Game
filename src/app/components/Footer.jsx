@@ -1,14 +1,14 @@
 import "./Footer.css";
 
-const currentYear = new Date().getFullYear();
+let currentYear = new Date();
 
 const Footer = () => {
 	return (
 		<div className="footer">
 			<p>
-			&copy;Code<span className="footerText">Cr8ive</span>
+			&copy; Code<span className="footerText">Cr8ive</span>
 			</p>
-			<span>{currentYear}</span>
+			<span>{currentYear.getFullYear()}</span>
 		</div>
 	);
 };
