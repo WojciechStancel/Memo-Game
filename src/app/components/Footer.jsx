@@ -1,14 +1,21 @@
+"use client";
+
+import { useState } from "react";
 import "./Footer.css";
 
-let currentYear = new Date();
+function getYear() {
+	let currentYear = new Date().getFullYear();
+	return currentYear
+}
 
 const Footer = () => {
+	const [actualYear, setActualYear] = useState(getYear());
 	return (
 		<div className="footer">
 			<p>
-			&copy; Code<span className="footerText">Cr8ive</span>
+				&copy; Code<span className="footerText">Cr8ive</span>
 			</p>
-			<span>{currentYear.getFullYear()}</span>
+			<span>{actualYear}</span>
 		</div>
 	);
 };
