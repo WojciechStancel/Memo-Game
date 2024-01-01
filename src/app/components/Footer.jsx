@@ -9,7 +9,7 @@ function getYear() {
 }
 
 const Footer = () => {
-	const [actualYear, setActualYear] = useState(getYear());
+	const [actualYear, ] = useState(getYear());
 	return (
 		<div className="footer">
 			<p>
